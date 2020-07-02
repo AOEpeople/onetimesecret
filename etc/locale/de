@@ -53,6 +53,7 @@
     :feedback_text: "Hast du eine Frage oder einem Kommentar?"
     :button_send_feedback: "Feedback senden"
     :verification_sent_to: "Eine Bestätigung wurde gesendet an"
+    :create_another: "Erstelle ein anders Secret"
   :homepage:
     :tagline1: "Füge ein Passwort, eine geheime Nachricht oder einen privaten Link unten ein."
     :tagline2: "Halte sensible Informationen aus deinen Chat-Logs und E-Mails heraus."

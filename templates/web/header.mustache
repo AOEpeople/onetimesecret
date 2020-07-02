@@ -6,7 +6,6 @@
 <head>
   <meta charset="utf-8">
   <meta name="referrer" content="no-referrer">
-  <link rel="shortcut icon" type="image/png" href="/img/favicon.png">
   {{#no_cache}}
   <meta http-equiv="pragma" content="no-cache">
   <meta http-equiv="expires" content="-1">
@@ -17,12 +16,35 @@
   <meta name="keywords" content="{{keywords}}">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   <style type="text/css">
     body {
       padding-top: 0px;
       padding-bottom: 10px;
-      font-family: georgia,serif;
+        font-family: 'Roboto', sans-serif;
     }
+
+    .introduction {
+        font-size: 18px;
+        font-weight: 400;
+        padding: 30px 0px 10px 0px;
+        color: #475157;
+    }
+
+    .platform {
+        bottom: 0.775rem;
+        left: 150px;
+        padding: 0 20px;
+        font-weight: normal;
+        font-size: 1.35rem;
+        line-height: 1.8em;
+        border-left: 2px solid #eff2f4;
+        margin-left: 20px;
+        font-family: 'Roboto', sans-serif;
+        color: #7a8891;
+        font-weight: 500;
+    }
+
     /* Custom container */
     .container-narrow {
       margin: 0 auto;
@@ -53,7 +75,7 @@
       margin-bottom: 6px;
       color: #333;
     }
-    .jumbotron .lead {
+    .lead {
       color: #999;
       line-height: 1;
       font-size: 16px;
@@ -74,10 +96,14 @@
       margin: 20px 0;
     }
     #logo {
-      background-image: url('/img/logo-48.png');
+      background-image: url('/img/AOE-Logo_full_resize.png');
+        background-size: contain;
+        background-repeat: no-repeat;
       display: inline-block;
-      width: 48px;
-      height: 48px;
+        width: 120px;
+        height: 50px;
+        margin-top: 15px !important;
+        margin-bottom: -20px;
     }
     @media (min-width: 481px) {
       #contentTab {
@@ -90,10 +116,19 @@
 
       }
       #logo {
-        background-image: url('/img/logo-36.png');
+        background-image: url('/img/AOE-Logo_full_resize.png');
+          background-size: contain;
+          background-repeat: no-repeat;
         display: inline-block;
         width: 36px;
         height: 36px;
+      }
+
+      .masthead {
+            color: #ccc;
+            margin-left: -20px;
+            margin-right: -20px;
+
       }
       .masthead .nav {
         margin-top: 18px;
@@ -127,11 +162,14 @@
 </head>
 <body id="{{body_class}}">
 <div id="banner"><div class="broadcast">{{{i18n.COMMON.broadcast}}}</div></div>
+<div class="masthead container-fluid" style="box-shadow: 0px 0px 22px 0px rgba(96, 106, 113, 0.28)">
+    <div class="container-narrow">
+        <div class="header-content" style="margin-bottom: 15px;">
+            <div style="display: inline-block"><a href="/"><h3 id="logo"></h3></a></div>
+            <div class="platform" style="display: inline-block"><div>OTS</div></div>
+        </div>
+    </div>
+</div>
 <div class="container-narrow">
 
-  <div class="masthead">
-    <div class="nav pull-right">
 
-    </div>
-    <a href="/"><h3 id="logo"></h3></a>
-  </div>
