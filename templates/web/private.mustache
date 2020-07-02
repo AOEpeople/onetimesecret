@@ -34,7 +34,7 @@
       </div>
       {{/truncated}}
 
-      <em>{{i18n.COMMON.secret}} ({{secret_shortkey}}):</em> <span class="smaller lighter">({{i18n.page.only_see_once}})</span><br/>
+      <span>{{i18n.COMMON.secret}} ({{secret_shortkey}}):</span> <span class="smaller lighter">({{i18n.page.only_see_once}})</span><br/>
       <textarea class="input-block-level" readonly="readonly" rows="{{display_lines}}">{{secret_value}}</textarea>
 
       {{/can_decrypt}}
@@ -74,7 +74,7 @@
     {{/is_destroyed}}
 
     <hr/>
-    <p class=""><a class="btn btn-block btn-large btn-custom" href="/">Create another secret</a></p>
+    <p class=""><a class="btn btn-block btn-large btn-custom" href="/">{{i18n.COMMON.create_another}}</a></p>
 
     {{#show_metadata_link}}
     <!--
