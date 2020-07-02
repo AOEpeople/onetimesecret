@@ -66,17 +66,24 @@ i.icon-fire {
   border-radius: 0px;
 }
 
-button.generate.btn.btn-large.btn-block.cufon {
+button.btn.btn-block.btn-large.btn-warning.cufon {
   border-radius: 0px;
-  font-size: 16px;
-  font-weight: 400;
-  background: #eff2f4 !important;
-  text-shadow: none;
-  color: #475157;
-  margin: 10px 0px;
 }
 
-button.generate.btn.btn-large.btn-block.cufon:hover {
+button.generate.btn.btn-large.btn-block.cufon {
+  font-family: 'Roboto', sans-serif;
+  border-radius: 0px;
+  -webkit-font-smoothing: antialiased;
+  background-color: #f7941d !important;
+  background-repeat: repeat-x;
+  background-image: none;
+  color: #fff!important;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400 !important;
+}
+
+button.generate.btn.btn-large.btn-block.cufon {
   border-radius: 0px;
   font-size: 16px;
   font-weight: 400;
@@ -86,6 +93,12 @@ button.generate.btn.btn-large.btn-block.cufon:hover {
   color: #fff;
   box-shadow: 0px 8px 5px -3px rgba(96,106,113,0.28);
 }
+button.generate.btn.btn-large.btn-block.cufon {
+  transition: all .2s ease-in-out;
+  background-color: #e38411 !important;
+  box-shadow: 0px 8px 5px -3px rgba(96,106,113,0.28);
+}
+
 
 textarea.btn-block:focus {
   border: 1px solid #f7941d;
