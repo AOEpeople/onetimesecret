@@ -53,7 +53,7 @@
     :feedback_text: "Hast du eine Frage oder einem Kommentar?"
     :button_send_feedback: "Feedback senden"
     :verification_sent_to: "Eine Bestätigung wurde gesendet an"
-    :create_another: "Erstelle ein anderes Secret"
+    :create_another: "Erstelle ein anders Secret"
   :homepage:
     :tagline1: "Füge ein Passwort, eine geheime Nachricht oder einen privaten Link unten ein."
     :tagline2: "Halte sensible Informationen aus deinen Chat-Logs und E-Mails heraus."
@@ -65,12 +65,6 @@
     :anon_info2: "Erstelle einen Account unter Benutzung einer "
     :anon_info3: "temporären E-Mail-Adresse"
     :anon_info4: "."
-    :days: "Tage"
-    :day: "Tag"
-    :hours: "Stunden"
-    :hour: "Stunde"
-    :minutes: "Minuten"
-    :minute: "Minute"
   :private:
     :pretext: "Teile diesen Link:"
     :requires_passphrase: "Benötigt eine Passphrase."
