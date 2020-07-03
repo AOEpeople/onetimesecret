@@ -160,6 +160,7 @@ select:focus{
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 400 !important;
+  text-shadow: none;
 }
 
 .btn-custom:hover {
