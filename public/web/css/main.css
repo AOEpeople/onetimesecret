@@ -78,7 +78,7 @@ button.generate.btn.btn-large.btn-block.cufon {
   background-repeat: repeat-x;
   background-image: none;
   color: #475157 !important;
-  font-family: 'Roboto', sans-serif;
+  opacity: 1.0;
   font-size: 16px;
   font-weight: 400 !important;
 }
@@ -86,12 +86,13 @@ button.generate.btn.btn-large.btn-block.cufon {
 button.generate.btn.btn-large.btn-block.cufon:hover {
   border-radius: 0px;
   -webkit-font-smoothing: antialiased;
-  background-color: #f7941d !important;
+  background-color: #475157 !important;
   background-repeat: repeat-x;
   background-image: none;
   color: #fff!important;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
+  opacity: 1.0;
   font-weight: 400 !important;
   transition: all .2s ease-in-out;
   box-shadow: 0px 8px 5px -3px rgba(96,106,113,0.28);
@@ -130,13 +131,12 @@ select:focus{
 }
 
 .btn-custom {
-  font-font: 'Roboto', sans-serif;
   border-radius: 0px;
   -webkit-font-smoothing: antialiased;
   background-color: #f7941d !important;
   background-repeat: repeat-x;
   background-image: none;
-  color: #fff!important;
+  color: #fff !important;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 400 !important;
