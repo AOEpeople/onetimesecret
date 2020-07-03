@@ -59,7 +59,6 @@ i.icon-fire {
   background-color: #f7941d;
   margin: 0px;
   padding: 0px;
-  margin-bottom: 0px;
   border-bottom: 4px solid #f7941d; /* dd4a22, d22000, b04420 */
 }
 
@@ -100,6 +99,7 @@ button.generate.btn.btn-large.btn-block.cufon {
   opacity: 1.0;
   font-size: 16px;
   font-weight: 400 !important;
+  text-shadow: none;
 }
 
 button.generate.btn.btn-large.btn-block.cufon:hover {
@@ -115,6 +115,7 @@ button.generate.btn.btn-large.btn-block.cufon:hover {
   font-weight: 400 !important;
   transition: all .2s ease-in-out;
   box-shadow: 0px 8px 5px -3px rgba(96,106,113,0.28);
+  text-shadow: none;
 }
 
 textarea.btn-block:focus {
@@ -129,7 +130,6 @@ textarea.btn-block:focus {
   border-left: 0px;
   border-right: 0px;
   transition: all .35s ease-in-out;
-
 }
 
 #createSecret input {
@@ -167,6 +167,7 @@ select:focus{
   transition: all .2s ease-in-out;
   background-color: #e38411 !important;
   box-shadow: 0px 8px 5px -3px rgba(96,106,113,0.28);
+  text-shadow: none;
 }
 
 button.btn.btn-block.btn-large.btn-warning.cufon.destroy {
