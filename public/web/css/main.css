@@ -74,6 +74,19 @@ button.generate.btn.btn-large.btn-block.cufon {
   font-family: 'Roboto', sans-serif;
   border-radius: 0px;
   -webkit-font-smoothing: antialiased;
+  background-color: #eff2f4 !important;
+  background-repeat: repeat-x;
+  background-image: none;
+  color: #475157 !important;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400 !important;
+}
+
+button.generate.btn.btn-large.btn-block.cufon:hover {
+  font-family: 'Roboto', sans-serif;
+  border-radius: 0px;
+  -webkit-font-smoothing: antialiased;
   background-color: #f7941d !important;
   background-repeat: repeat-x;
   background-image: none;
