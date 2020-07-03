@@ -125,6 +125,18 @@
         box-shadow: 0px 8px 5px -3px rgba(96,106,113,0.28);
     }
 
+    #sec:hover:after {
+        content: ' - One Time Secret';
+        color: #f7941d;
+        -webkit-transition: all 3s;
+        transition: opacity 3s;
+    }
+
+    #sec::after {
+        transition: opacity 3s;
+        opacity: 0.0;
+    }
+
     @media (min-width: 481px) {
       #contentTab {
         margin-top: 20px;
@@ -199,7 +211,7 @@
     <div class="container-narrow">
         <div class="header-content" style="margin-bottom: 15px;">
             <div style="display: inline-block"><a href="/"><h3 id="logo"></h3></a></div>
-            <div class="platform" style="display: inline-block"><div>OTS</div></div>
+            <div class="platform" style="display: inline-block"><div id="sec">OTS</div></div>
         </div>
     </div>
 </div>
