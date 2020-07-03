@@ -11,6 +11,25 @@ a.btn.btn-block.btn-large {
   text-shadow: none;
 }
 
+input#secreturi {
+  border-radius: 0px;
+  height: 1.2em;
+}
+
+.private .secret textarea {
+  background-color: #eff2f4;
+  color: #666;
+  padding: 10px;
+  width: 100%;
+  border-radius: 0px;
+  margin: 10px 0px;
+}
+
+.private .secret textarea:focus {
+  border: 1px solid #f7941d;
+  box-shadow: 3px 3px 7px 0px rgba(96,106,113,0.28);
+}
+
 i.icon-fire {
   color: #fff !important;
   filter: brightness(100);
@@ -102,6 +121,7 @@ textarea.btn-block:focus {
   border: 1px solid #f7941d;
   box-shadow: 3px 3px 7px 0px rgba(96,106,113,0.28);
 }
+
 #createSecret input:focus {
   box-shadow: 0px 8px 5px -3px rgba(96,106,113,0.28);
   border-bottom: 1px solid #f7941d;
