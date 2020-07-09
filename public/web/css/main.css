@@ -33,6 +33,9 @@ input#secreturi {
 i.icon-fire {
   color: #fff !important;
   filter: brightness(100);
+  position: relative;
+  bottom: 2px;
+  padding-right: 5px;
 }
 i.icon-ok {
   color: #fff !important;
