@@ -63,6 +63,14 @@
 {{/with_analytics}}
 
 <!-- {{via_hn}}:{{via_test}}:{{via_reddit}} -->
+  <script>
+      function copySecretUri() {
+          var copyText = document.getElementById("secreturi");
+          copyText.select();
+          copyText.setSelectionRange(0, 99999)
+          document.execCommand("copy");
+      }
+  </script>
 
 </body>
 </html>
