@@ -96,6 +96,7 @@ input#secreturi:focus {
   height: 20px;
   width: 20px;
   background-image: none;
+  margin-top: -1px !important;
 }
 
 
