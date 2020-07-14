@@ -29,6 +29,15 @@ a.btn.btn-block.btn-large {
   text-shadow: none;
 }
 
+h3.cufon {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  color: #475157;
+}
+
 h2.intro.cufon {
   font-size: 18px;
   text-align: center;
