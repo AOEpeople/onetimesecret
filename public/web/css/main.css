@@ -375,6 +375,10 @@ a.keepgoing {
   outline: none;
 }
 
+.shared .secret input, .shared .secret textarea:focus {
+  box-shadow: 0px 8px 5px -3px rgba(96,106,113,0.28);
+}
+
 .nav em { font-style: normal; text-decoration: underline; }
 
 
