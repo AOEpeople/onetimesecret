@@ -1,3 +1,4 @@
+.idea
 .bundle/
 log/
 tmp/
@@ -6,4 +7,3 @@ tmp/
 *.log
 *.txt
 .ruby-version
-

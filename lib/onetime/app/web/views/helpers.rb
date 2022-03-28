@@ -44,7 +44,7 @@ module Onetime
           if current_subdomain
             fulldomain = [current_subdomain['cname'], Onetime.conf[:site][:domain]].join('.')
           else
-            fulldomain = Onetime.conf[:site][:host]
+            fulldomain = Onetime.conf[:site][:qualifiedDomain]
           end
           uri = [scheme, fulldomain].join
           #uri << (':%d' % server_port) if ![443, 80].member?(server_port.to_i)

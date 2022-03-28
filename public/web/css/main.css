@@ -5,11 +5,106 @@
    Custom styles
    ========================================================================== */
 
+.passphrase {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.passphrase input {
+  width: 320px;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 6px;
+  border: 0px;
+  background-color: #eee;
+  color: #000;
+  text-align: center;
+  border-radius: 0px;
+}
+
+a.btn.btn-block.btn-large {
+  color: #fff !important;
+  background: #475157;
+  border-radius: 0px;
+  text-shadow: none;
+}
+
+h3.cufon {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  color: #475157;
+}
+
+h2.intro.cufon {
+  font-size: 18px;
+  text-align: center;
+  font-weight: 400;
+  color: #475157;
+  font-family: 'Roboto', sans-serif;
+  padding-top: 20px !important;
+}
+
+button.copy-btn.btn-custom.btn {
+  margin-left: 7px;
+  display: inline-block;
+  width: 5%;
+  padding: 5px;
+}
+
+.passphrase input:focus {
+  border: 1px solid #f7941d;
+  box-shadow: 3px 3px 7px 0px rgba(96,106,113,0.28);
+}
+
+
+input#secreturi {
+  border-radius: 0px;
+  height: 1.2em;
+  width: 92%;
+}
+
+input#secreturi:focus {
+  font-size: 16px;
+  line-height: 16px;
+  padding: 6px;
+  color: #fff;
+  border: 0px;
+  background-color: #7b8a93;
+  border-radius: 0px;
+  outline: none;
+}
+
+.private .secret textarea {
+  background-color: #eff2f4;
+  color: #666;
+  padding: 10px;
+  width: 100%;
+  border-radius: 0px;
+  margin: 10px 0px;
+}
+
+.private .secret textarea:focus {
+  border: 1px solid #f7941d;
+  box-shadow: 3px 3px 7px 0px rgba(96,106,113,0.28);
+}
+
+.icon-on-button {
+  display: inline;
+  height: 20px;
+  width: 20px;
+  background-image: none;
+  margin-top: -1px !important;
+}
+
 
 .masthead .nav a {
   color: black;
   text-decoration: underline;
 }
+
 .masthead .nav a.home {
   color: #999;
   text-decoration: none;
@@ -26,11 +121,10 @@
 
 #banner {
   width: 100%;
-  background-color: #f0f0f0;
+  background-color: #f7941d;
   margin: 0px;
   padding: 0px;
-  margin-bottom: 0px;
-  border-bottom: 4px solid red; /* dd4a22, d22000, b04420 */
+  border-bottom: 4px solid #f7941d; /* dd4a22, d22000, b04420 */
 }
 
 #banner .broadcast {
@@ -48,27 +142,138 @@
 }
 
 #createSecret textarea, #createSecret input {
-  background-color: #f9f9f9;
+  background-color: #eff2f4;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
   padding: 6px;
+  border-radius: 0px;
 }
 
-.btn-custom {
+button.btn.btn-block.btn-large.btn-warning.cufon {
+  border-radius: 0px;
+}
+
+button.generate.btn.btn-large.btn-block.cufon {
+  font-family: 'Roboto', sans-serif;
+  border-radius: 0px;
   -webkit-font-smoothing: antialiased;
-  background-color: #dd4a22!important;
+  background-color: #899EA3 !important;
+  background-repeat: repeat-x;
+  background-image: none;
+  color: #fff !important;
+  opacity: 1.0;
+  font-size: 16px;
+  font-weight: 400 !important;
+  text-shadow: none;
+  width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button.generate.btn.btn-large.btn-block.cufon:hover {
+  border-radius: 0px;
+  -webkit-font-smoothing: antialiased;
+  background-color: #798c91 !important;
   background-repeat: repeat-x;
   background-image: none;
   color: #fff!important;
-  border-color: #b04420 #b04420 hsl(15,69%,41%);
-  text-shadow: 0 -1px 0 rgba(0,0,0,0.00);
-  font-weight: bold;
-  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  opacity: 1.0;
+  font-weight: 400 !important;
+  transition: all .2s ease-in-out;
+  box-shadow: 0px 8px 5px -3px rgba(96,106,113,0.28);
+  text-shadow: none;
 }
+
+textarea.btn-block:focus {
+  border: 1px solid #f7941d;
+  box-shadow: 3px 3px 7px 0px rgba(96,106,113,0.28);
+}
+
+#createSecret input:focus {
+  box-shadow: 0px 8px 5px -3px rgba(96,106,113,0.28);
+  border-bottom: 1px solid #f7941d;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  transition: all .35s ease-in-out;
+}
+
+#passField input:focus {
+  box-shadow: 0px 8px 5px -3px rgba(96,106,113,0.28);
+  border-bottom: 1px solid #f7941d;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  transition: all .35s ease-in-out;
+}
+
+#passField input {
+  box-shadow: none;
+  border-bottom: 1px solid #475157;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+}
+
+#createSecret input {
+  box-shadow: none;
+  border-bottom: 1px solid #475157;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+}
+
+select{
+  border-radius: 0px;
+}
+
+select:focus{
+  border: 1px solid #f7941d;
+  box-shadow: 3px 3px 7px 0px rgba(96,106,113,0.28);
+  outline: none;
+}
+
+.btn-custom {
+  border-radius: 0px;
+  -webkit-font-smoothing: antialiased;
+  background-color: #f7941d !important;
+  background-repeat: repeat-x;
+  background-image: none;
+  color: #fff !important;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400 !important;
+  text-shadow: none;display: block;
+  margin: 20px auto;
+  width: 60%;
+}
+
 .btn-custom:hover {
-  background-color: #d22000 !important;
-  text-shadow: 1px 1px 0 #740500;
+  transition: all .2s ease-in-out;
+  background-color: #e38411 !important;
+  box-shadow: 0px 8px 5px -3px rgba(96,106,113,0.28);
+  text-shadow: none;
 }
 
+button.btn.btn-block.btn-large.btn-warning.cufon.destroy {
+  border-radius: 0px;
+  font-size: 16px;
+  font-weight: 400;
+  background: #7b8a93 !important;
+  text-shadow: none;
+  transition: all .2s ease-in-out;
+  color: #fff;
+  box-shadow: 0px 8px 5px -3px rgba(96,106,113,0.28);
+}
 
+button.btn.btn-block.btn-large.btn-warning.cufon.destroy:hover {
+  transition: all .2s ease-in-out;
+  background-color: #e38411 !important;
+  box-shadow: 0px 8px 5px -3px rgba(96,106,113,0.28);
+}
 
 
 #footer {
@@ -124,6 +329,9 @@ a.keepgoing {
   color: #999;
   font-size: 16px;
   text-align: center;
+  font-style: normal;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px !important;
 }
 
 #faq {
@@ -148,28 +356,62 @@ a.keepgoing {
   margin-top: 10px;
   margin-left: 10px;
 }
+
+.shared {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.shared .secret input, .shared .secret textarea {
+  font-size: 14px;
+  line-height: 14px;
+  background-color: #fafafa;
+  color: #000;
+  padding: 10px;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 0px;
+  border: 3px solid #f7941d;
+  outline: none;
+}
+
+.shared .secret input, .shared .secret textarea:focus {
+  box-shadow: 0px 8px 5px -3px rgba(96,106,113,0.28);
+}
+
 .nav em { font-style: normal; text-decoration: underline; }
 
 
 div.private{font-size: 18px; line-height: 18px; margin-top: 20px;}
-.shared{ margin-top: 20px;}
-#generate .secret input {width: 620px; font-size: 16px; line-height: 16px; padding: 6px; margin: 6px 0px 6px 0px;}
+
+#generate .secret input {width: 620px; font-size: 16px; line-height: 16px; padding: 6px; margin: 6px 0px 6px 0px;}F
 .private .secret input, .private .secret textarea { background-color: #eee; color: #666; padding: 10px; width: 100%;}
 .private .secret input[disabled] { background-color: #eee; color: #fff;}
-.shared .secret input, .shared .secret textarea {
-  border: 8px solid #eee; font-size: 14px; line-height: 14px; background-color: #fafafa; color: #000; -padding: 10px; width: 100%; margin-top: 20px
+
+.uri input {    width: 620px;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 6px;
+  color: #fff;
+  border: 0px;
+  background-color: #7b8a93;
 }
-.uri input {width: 620px; font-size: 16px; line-height: 16px; padding: 6px; border: 0px; background-color: #ff0;}
 .uri input.private {background-color: #eee;}
 .uri p {padding: 6px; font-size: 80%; margin: 0px; color: #999;}
 .passphrase { margin-bottom: 30px; }
 .passphrase input {width: 320px; font-size: 16px; line-height: 16px; padding: 6px; border: 0px; background-color: #eee; color: #000;}
 
 .secret {margin-bottom: 20px}
-.uri{margin-bottom: 10px}
+.uri{
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
 .pretext {
-  line-height: 24px;
-  font-size: 24px;
+  line-height: 45px;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  color: #475157;
 }
 .passphrase . text {
   line-height: 18px;
@@ -260,9 +502,7 @@ div.private{font-size: 18px; line-height: 18px; margin-top: 20px;}
   *padding-top: 19px;
   background-color: #fff;
   border: 1px solid #ddd;
-  -webkit-border-radius: 4px;
-     -moz-border-radius: 4px;
-          border-radius: 4px;
+  border-radius: 0px;
 }
 
 .options-box .title {
@@ -271,13 +511,13 @@ div.private{font-size: 18px; line-height: 18px; margin-top: 20px;}
   left: -1px;
   padding: 3px 7px;
   font-size: 12px;
-  font-weight: bold;
-  background-color: #f5f5f5;
+  font-weight: 500;
+  background-color: #475157;
   border: 1px solid #ddd;
-  color: #9da0a4;
-  -webkit-border-radius: 4px 0 4px 0;
-     -moz-border-radius: 4px 0 4px 0;
-          border-radius: 4px 0 4px 0;
+  color: #eff2f4;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
 }
 
 .alert a {

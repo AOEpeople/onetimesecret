@@ -36,7 +36,7 @@ if Otto.env?(:dev)
       use Rack::CommonLogger
       use Rack::Reloader, 1
       app.option[:public] = PUBLIC_DIR
-      app.add_static_path '/favicon.ico'
+      app.add_static_path '/favicon_aoe.ico'
       # TODO: Otto should check for not_found method instead of settign it here.
       #otto.not_found = [404, {'Content-Type'=>'text/plain'}, ["Server error2"]]
       run app

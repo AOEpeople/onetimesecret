@@ -115,7 +115,6 @@ There are many way to run the webapp, just like any Rack-based app. The default 
 ```bash
   bundle exec thin -d -S /var/run/thin/thin.sock -l /var/log/thin/thin.log -P /var/run/thin/thin.pid -e prod -s 2 restart
 ```
-
 ## Generating a global secret
 
 We include a global secret in the encryption key so it needs to be long and secure. One approach for generating a secret:
