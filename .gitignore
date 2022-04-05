@@ -1,8 +1,9 @@
-.bundle
-log
-tmp
-.rudy
-
+.idea
+.bundle/
+log/
+tmp/
+.rudy/
+*.env
+*.log
+*.txt
 .ruby-version
-
-.DS_Store

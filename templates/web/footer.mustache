@@ -1,7 +1,7 @@
+<hr/>
 
-  <hr/>
-
-  <div id="footer">
+<div id="footer">
+    <!--
     {{#display_feedback}}
     <form class="form form-inline" action="/feedback" method="post">
       {{{add_shrimp}}}
@@ -11,7 +11,9 @@
       </div>
     </form>
     {{/display_feedback}}
+          -->
     {{#display_links}}
+        <!--
     <p class="footerNav">
       <a href="{{baseotsuri}}/about">About</a> |
       <a href="{{baseotsuri}}/translations">Help Translate</a> |
@@ -25,7 +27,9 @@
       <a href="{{baseotsuri}}/contributor">Contributors</a> |
       <a href="{{baseotsuri}}/info/security">Security</a>
     </p>
+    -->
     {{/display_links}}
+    <!--
     {{#display_icons}}
     <div class="tagline">
       Follow our latest news:
@@ -36,8 +40,8 @@
       <p class="release">{{ot_version}}-{{ot_version_id}}-{{locale}}</p>
     </div>
     {{/display_icons}}
-
-  </div>
+-->
+</div>
 
 </div> <!-- /container -->
 
@@ -46,18 +50,31 @@
 <script src="/js/plugins.js?{{ot_version_id}}"></script>
 <script src="/js/main.js?{{ot_version_id}}"></script>
 {{#js}}
-<script src="{{to_s}}" type="text/javascript"></script>
+    <script src="{{to_s}}" type="text/javascript"></script>
 {{/js}}
 <script type="text/javascript">
-  //$('.jumbotron h1').removeClass('temp-kerning');
-  //Cufon.refresh();
+    //$('.jumbotron h1').removeClass('temp-kerning');
+    //Cufon.refresh();
 </script>
 
 {{#with_analytics}}
-<!-- No analytics enabled by default (or on onetimesecret.com). -->
+    <!-- No analytics enabled by default (or on onetimesecret.com). -->
 {{/with_analytics}}
 
 <!-- {{via_hn}}:{{via_test}}:{{via_reddit}} -->
+<script>
+    function copySecretUri() {
+        // Checking if the browser is Internet Explorer.
+        // documentMode only exists in Internet Explorer.
+        if (document.documentMode) {
+            $("#secreturi").select();
+            document.execCommand("copy");
+        } else {
+            navigator.clipboard.writeText($("#secreturi").val());
+        }
+    }
+</script>
+
 </body>
 </html>
 

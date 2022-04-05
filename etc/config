@@ -1,16 +1,16 @@
 :site:
-  :host: localhost:7143
+  :host: <%= ENV['ONETIMESECRET_HOST'] || 'localhost:7143' %>
   :domain: localhost
-  :ssl: false
+  :ssl: <%= ENV['ONETIMESECRET_SSL'] == 'true' %>
   # NOTE Once the secret is set, do not change it (keep a backup offsite)
-  :secret: CHANGEME
+  :secret: <%= ENV['ONETIMESECRET_SECRET'] || 'CHANGEME' %>
 :redis:
-  :uri: 'redis://user:CHANGEME@127.0.0.1:7179/0?timeout=10&thread_safe=false&logging=false'
+  :uri: <%= (ENV['ONETIMESECRET_REDIS_URL'] || 'redis://user:CHANGEME@127.0.0.1:7179/0') + '?timeout=10&thread_safe=false&logging=false' %>
   :config: /etc/onetime/redis.conf
 :colonels:
   # Accounts created with the following email addresses
   # are automatically considered admins of the system.
-  - CHANGEME@EXAMPLE.com
+  - <%= ENV['ONETIMESECRET_COLONEL'] || 'CHANGEME@EXAMPLE.com' %>
 :emailer:
   :mode: :sendgrid
   :account: CHANGEME
@@ -21,14 +21,14 @@
 # Use the following email config to enable SMTP
 # support and remove the :emailer config above.
 #:emailer:
-  #  :mode: :smtp
-  #  :from: delano@onetimesecret.com
-  #  :host: localhost
-  #  :port: 587
-  #  :tls: false
-  #  :user:
-  #  :pass:
-  #  :auth:
+#   :mode: :smtp
+#   :from: CHANGEME@example.com
+#   :host: localhost
+#   :port: 587
+#   :tls: false
+#   :user:
+#   :pass:
+#   :auth:
 :incoming:
   # Intended for use by IT support teams who need someone to send them
   # sensitive info. The email address is where the secret
@@ -40,20 +40,27 @@
   :passphrase: CHANGEME
   :regex: \A[a-zA-Z0-9]{6}\z
 :locales:
+  - ar
+  - bg
+  - ca_ES
+  - cn
+  - cs
+  - da_DK
+  - de
+  - el_GR
   - en
   - es
-  - de
-  - nl
-  - ru
-  - cs
   - fr
-  - bg
-  - tr
-  - ca_ES
-  - pt_BR
-  - pl
+  - fr_FR
+  - he
   - it_IT
-  - cn
+  - nl
+  - pl
+  - pt_BR
+  - ru
+  - sl_SI
+  - sv_SE
+  - tr
 :unsupported_locales:
   - jp
 :stathat:
@@ -76,14 +83,3 @@
   :show_metadata: 1000
   :show_secret: 1000
   :burn_secret: 1000
-#:split_tests:
-#  :initial_pricing:
-#    - - basic_v1
-#      - professional_v1
-#      - agency_v1
-#    - - basic_v1
-#      - professional_v2
-#      - agency_v1
-#    - - basic_v1
-#      - professional_v2
-#      - agency_v2
