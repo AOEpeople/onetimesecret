@@ -5,7 +5,12 @@
     {{#show_secret_link}}
     <div class="uri">
       <span class="pretext">{{i18n.page.pretext}}</span><br/>
-      <div><input id="secreturi" class="selectable" value="{{share_uri}}" readonly="readonly" /><button class="copy-btn btn-custom btn" onclick="copySecretUri()"><img class="icon-on-button" src="/icons/content_copy-black-18dp.svg" /></button></div>
+      <div id="link-wrapper">
+          <input id="secreturi" class="selectable" value="{{share_uri}}" readonly="readonly" />
+          <button class="copy-btn" onclick="copySecretUri()">
+              <img class="icon-on-button" src="/icons/content_copy-black-18dp.svg" />
+          </button>
+      </div>
       {{#has_passphrase}}
       <p><strong>{{i18n.page.requires_passphrase}}</strong></p>
       {{/has_passphrase}}
@@ -67,14 +72,14 @@
 
     <hr/>
     {{^is_destroyed}}
-    <a class="btn btn-block btn-large" href="{{burn_uri}}"><img class="icon-on-button" src="/icons/local_fire_department-black-18dp.svg" /> {{i18n.COMMON.burn_this_secret}}</a>
+    <a class="btn btn-block btn-large btn-primary" href="{{burn_uri}}"><img class="icon-on-button" src="/icons/local_fire_department-black-18dp.svg" /> {{i18n.COMMON.burn_this_secret}}</a>
 
     <hr/>
     <p class="hint">* {{i18n.COMMON.burn_this_secret_hint}}.</p>
     {{/is_destroyed}}
 
     <hr/>
-    <p class=""><a class="btn btn-block btn-large btn-custom" href="/">{{i18n.COMMON.create_another}}</a></p>
+    <p class=""><a class="btn btn-block btn-large btn-secondary" href="/">{{i18n.COMMON.create_another}}</a></p>
 
     {{#show_metadata_link}}
     <!--
