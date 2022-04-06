@@ -23,7 +23,7 @@
           rel="stylesheet">
     <style type="text/css">
         body {
-            padding-top: 0px;
+            padding-top: 0;
             padding-bottom: 10px;
             font-family: 'Roboto', sans-serif;
             font-weight: 300;
@@ -48,12 +48,12 @@
         .introduction {
             font-size: 18px;
             font-weight: 400;
-            padding: 30px 0px 10px 0px;
+            padding: 30px 0 10px 0;
             color: #475157;
         }
 
         .platform {
-            bottom: 0.775rem;
+            bottom: .775rem;
             left: 150px;
             padding: 0 20px;
             font-size: 1.35rem;
@@ -78,12 +78,12 @@
 
         .masthead {
             color: #ccc;
-            box-shadow: 0px 0px 22px 0px rgba(96, 106, 113, 0.28);
+            box-shadow: 0 0 22px 0 rgba(96, 106, 113, .28);
         }
 
         .masthead .nav {
             margin-top: 24px;
-            padding: 0px;
+            padding: 0;
         }
 
         /* Main marketing message and sign up button */
@@ -98,7 +98,7 @@
             font-size: 22px;
             font-weight: normal;
             line-height: 1;
-            margin-top: 0px;
+            margin-top: 0;
             margin-bottom: 6px;
             color: #333;
         }
@@ -130,7 +130,7 @@
             display: inline-block;
             width: 120px;
             height: 50px;
-            margin-top: 15px !important;
+            margin-top: 15px;
             margin-bottom: -20px;
             padding-right: 10px;
         }
@@ -139,17 +139,17 @@
             border-radius: 0px;
             font-size: 16px;
             font-weight: 400;
-            background: #7b8a93 !important;
+            background: #7b8a93;
             text-shadow: none;
             transition: all .2s ease-in-out;
             color: #fff;
-            box-shadow: 0px 8px 5px -3px rgba(96, 106, 113, 0.28);
+            box-shadow: 0 8px 5px -3px rgba(96, 106, 113, .28);
         }
 
         .destroy:hover {
             transition: all .2s ease-in-out;
-            background-color: #e38411 !important;
-            box-shadow: 0px 8px 5px -3px rgba(96, 106, 113, 0.28);
+            background-color: #e38411;
+            box-shadow: 0 8px 5px -3px rgba(96, 106, 113, .28);
         }
 
         .animate {
@@ -175,15 +175,6 @@
             100% {
                 transform: translate(0) rotate(0) scale(1);
                 opacity: 1;
-            }
-        }
-
-        @keyframes fadeout {
-            0% {
-                opacity: 1;
-            }
-            100% {
-                opacity: 0;
             }
         }
 
@@ -247,40 +238,41 @@
 
         /* Landscape phones and down */
         @media (max-width: 480px) {
-        @media (max-width: 480px) {
+            @media (max-width: 480px) {
 
-            input#secreturi {
-                width: 96% !important;
-            }
+                input#secreturi {
+                    width: 96%;
+                }
 
-            .header-content {
-                text-align: center;
-            }
+                .header-content {
+                    text-align: center;
+                }
 
-            .aoe-logo {
-                margin: 0 5px;
-            }
+                .aoe-logo {
+                    margin: 0 5px;
+                }
 
-            .platform {
-                margin-left: 0px;
-                padding: 0 6px;
-            }
+                .platform {
+                    margin-left: 0;
+                    padding: 0 6px;
+                }
 
-            .masthead {
-                color: #ccc;
-                margin-left: -20px;
-                margin-right: -20px;
+                .masthead {
+                    color: #ccc;
+                    margin-left: -20px;
+                    margin-right: -20px;
 
-            }
+                }
 
-            .masthead .nav {
-                margin-top: 18px;
-                padding: 0px;
-            }
+                .masthead .nav {
+                    margin-top: 18px;
+                    padding: 0;
+                }
 
-            .jumbotron h1 {
-                letter-spacing: -1px;
-                display: none;
+                .jumbotron h1 {
+                    letter-spacing: -1px;
+                    display: none;
+                }
             }
         }
     </style>
