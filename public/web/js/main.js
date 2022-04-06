@@ -58,10 +58,6 @@ function generateEntropy(e) {
 // COMMON BEHAVIORS
 $(function() {
   $('.entropy-generate').click(generateEntropy);
-  $('#secreturi').select();
-  $(".selectable").click(function(){
-    this.select();
-  });
   $('.email').deobfuscate();
   //$('#optionsToggle').click(function(){
   //  $('#options').toggle();
