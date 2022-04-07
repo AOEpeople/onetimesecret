@@ -87,11 +87,24 @@ class Onetime::App
     # If `locale` is specifies it will override if available.
     # If the `local` query param is set, it will override.
     def check_locale! locale=nil
-      locale = locale || req.cookie(:locale) if req.cookie?(:locale) # Use cookie value
-      unless req.params[:locale].to_s.empty?
-        locale = req.params[:locale]                                 # Use query param
-        res.send_cookie :locale, locale, 4.hours, Onetime.conf[:site][:ssl]
+      only_english = true
+      if only_english then
+        req.env['ots.locale'], req.env['ots.locales'] = "en", ["en"]
+      else
+        locale = locale || req.cookie(:locale) if req.cookie?(:locale) # Use cookie value
+        unless req.params[:locale].to_s.empty?
+            locale = req.params[:locale]                                 # Use query param
+            res.send_cookie :locale, locale, 4.hours, Onetime.conf[:site][:ssl]
+        end
+        locales = req.env['rack.locale'] || []                          # Requested list
+        locales.unshift locale.split('-').first if locale.is_a?(String) # Support both en and en-US
+        locales << OT.conf[:locales].first                              # Ensure at least one configured locale is available
+        locales = locales.uniq.reject { |l| !OT.locales.has_key?(l) }.compact
+        locale = locales.first if !OT.locales.has_key?(locale)           # Default to the first available
+        OT.ld [:locale, locale, locales, req.env['rack.locale'], OT.locales.keys].inspect
+        req.env['ots.locale'], req.env['ots.locales'] = (@locale = locale), locales
       end
+      locales << OT.conf[:locales].first                              # Ensure at least one configured locale is available
       locales = req.env['rack.locale'] || []                          # Requested list
       locales.unshift locale.split('-').first if locale.is_a?(String) # Support both en and en-US
       locales << OT.conf[:locales].first                              # Ensure at least one configured locale is available
