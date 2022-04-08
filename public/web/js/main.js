@@ -4,6 +4,10 @@
 // Cufon.replace('.cufon');
 */
 
+cssVars({
+  // https://jhildenbiddle.github.io/css-vars-ponyfill/#/?id=options
+})
+
 $(function() {
   $.fn.deobfuscate = function() {
     $(this).each(function(i, el) {
@@ -21,10 +25,10 @@ $(function() {
     return this.each(function(){
       var default_value = $(this).val();
       $(this).focus(function(){
-        if ($(this).val() == default_value) $(this).val("");
+        if ($(this).val() === default_value) $(this).val("");
       });
       $(this).blur(function(){
-        if ($(this).val() == "") $(this).val(default_value);
+        if ($(this).val() === "") $(this).val(default_value);
       });
     });
   };
@@ -33,7 +37,7 @@ $(function() {
     this.replaceWith(content);
     $(this)
   };
-});
+})
 
 function generateEntropy(e) {
   var obj = $(this);
@@ -53,7 +57,19 @@ function generateEntropy(e) {
     }
   });
   return e.preventDefault();
-};
+}
+
+
+function copySecretUri() {
+  // Checking if the browser is Internet Explorer.
+  // documentMode only exists in Internet Explorer.
+  if (document.documentMode) {
+    $('#secreturi').select();
+    document.execCommand('copy');
+  } else {
+    navigator.clipboard.writeText($('#secreturi').val());
+  }
+}
 
 // COMMON BEHAVIORS
 $(function() {
@@ -73,5 +89,5 @@ $(function() {
     e.preventDefault();
     $(this).tab('show');
   });
-});
+})
 

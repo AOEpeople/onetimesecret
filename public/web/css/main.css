@@ -13,6 +13,12 @@
     --secondary-color-light: #1c4a94;
 }
 
+@media screen\0 {
+    #passphraseField {
+        line-height: 10px;
+    }
+}
+
 body {
     background-color: #f1f5f9;
 }
@@ -51,19 +57,15 @@ button.copy-btn {
 }
 
 #secreturi:hover{
-    background-image: none;
+    background-image: none !important;
 }
 
 #link-wrapper {
     display: flex;
 }
 
-#link-wrapper #secreturi {
-    transition: 2s;
-}
-
 #link-wrapper:hover #secreturi {
-    background-image: linear-gradient(to left, var(--secondary-color), rgba(28, 74, 148, .1), rgba(28, 74, 148, 0));
+    background-image: linear-gradient(to left, var(--secondary-color), rgba(28, 74, 148, .1) 20%, rgba(28, 74, 148, 0));
 }
 
 .icon-on-button {
