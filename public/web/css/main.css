@@ -148,6 +148,11 @@ input#secreturi {
     padding: 11px 18px;
 }
 
+#createSecret textarea,
+.secret textarea {
+    font-family: 'Roboto Mono', monospace;
+}
+
 input#secreturi {
     border: 1px solid #ccc;
     text-align: left;
