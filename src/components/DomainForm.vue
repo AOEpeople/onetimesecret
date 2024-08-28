@@ -18,7 +18,7 @@
 
       <button type="submit"
               :disabled="isSubmitting"
-              class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-xl font-medium text-white bg-brand-600 hover:bg-brand-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-500 dark:bg-brand-500 dark:hover:bg-brand-400 dark:focus:ring-offset-gray-900">
+              class="w-full flex justify-center py-2 px-4 border border-transparent shadow-sm text-xl font-medium text-white bg-brand-600 hover:bg-brand-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-500 dark:bg-brand-500 dark:hover:bg-brand-400 dark:focus:ring-offset-gray-900">
         {{ isSubmitting ? 'Adding...' : 'Continue' }}
       </button>
     </form>

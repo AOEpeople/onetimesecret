@@ -33,7 +33,7 @@ const selectDomain = (domain: string) => {
   <div class="relative inline-block text-left">
     <div>
       <button type="button"
-              class="inline-flex justify-center w-full rounded-md border border-gray-300 dark:border-gray-600 shadow-sm px-4 py-2 bg-white dark:bg-gray-800 text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brandcomp-500 dark:focus:ring-offset-gray-800"
+              class="inline-flex justify-center w-full border border-gray-300 dark:border-gray-600 shadow-sm px-4 py-2 bg-white dark:bg-gray-800 text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brandcomp-500 dark:focus:ring-offset-gray-800"
               @click="toggleDropdown">
         <span class="text-sm text-brandcomp-600 dark:text-brandcomp-400 font-bold">{{ selectedDomain }}</span>
         <Icon icon="heroicons-solid:chevron-down"
@@ -43,7 +43,7 @@ const selectDomain = (domain: string) => {
     </div>
 
     <div v-if="isOpen"
-         class="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white dark:bg-gray-800 ring-1 ring-black ring-opacity-5 dark:ring-gray-700 focus:outline-none">
+         class="origin-top-right absolute right-0 mt-2 w-56 shadow-lg bg-white dark:bg-gray-800 ring-1 ring-black ring-opacity-5 dark:ring-gray-700 focus:outline-none">
       <div class="py-1"
            role="menu"
            aria-orientation="vertical"

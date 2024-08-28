@@ -32,7 +32,7 @@
       </svg>
     </button>
     <div v-if="showTooltip"
-         class="absolute z-10 px-2 py-1 text-sm text-white bg-gray-900 rounded-md bottom-full left-1/2 transform -translate-x-1/2 -translate-y-2">
+         class="absolute z-10 px-2 py-1 text-sm text-white bg-gray-900 bottom-full left-1/2 transform -translate-x-1/2 -translate-y-2">
       {{ copied ? 'Copied!' : 'Copy to clipboard' }}
     </div>
   </div>

@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex items-center space-x-2 overflow-hidden p-2 rounded-lg cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-200"
+    class="flex items-center space-x-2 overflow-hidden p-2 cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-200"
     :class="{ 'bg-gray-200 dark:bg-gray-600': isSelected }"
     @click="selectDomain"
   >

@@ -1,26 +1,29 @@
-/*@font-face {
-  font-family: 'Zilla Slab';
-  src: url('./fonts/zs/ZillaSlab-Regular.woff2') format('woff2'),
-       url('./fonts/zs/ZillaSlab-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
+@font-face {
+  font-display:swap;
+  font-family:Peclet;
+  font-style:normal;
+  font-weight:400;
+  src:local(""),
+  url('./fonts/Peclet/Peclet-Regular.woff2') format("woff2"),
+  url('./fonts/Peclet/Peclet-Regular.woff') format("woff")
 }
 
 @font-face {
-  font-family: 'Zilla Slab';
-  src: url('./fonts/zs/ZillaSlab-Bold.woff2') format('woff2'),
-       url('./fonts/zs/ZillaSlab-Bold.woff') format('woff');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
+  font-display:swap;
+  font-family:Peclet;
+  font-style:normal;
+  font-weight:500;
+  src:local(""),
+  url('./fonts/Peclet/Peclet-Medium.woff2') format("woff2"),
+  url('./fonts/Peclet/Peclet-Medium.woff') format("woff")
 }
 
 @font-face {
-  font-family: 'Zilla Slab';
-  src: url('./fonts/zs/ZillaSlab-Italic.woff2') format('woff2'),
-       url('./fonts/zs/ZillaSlab-Italic.woff') format('woff');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}*/
+  font-display:swap;
+  font-family:Peclet;
+  font-style:normal;
+  font-weight:600;
+  src:local(""),
+  url('./fonts/Peclet/Peclet-Semibold.woff2') format("woff2"),
+  url('./fonts/Peclet/Peclet-Semibold.woff') format("woff")
+}

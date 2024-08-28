@@ -8,7 +8,7 @@
         { 'text-green-600': isActive, 'text-yellow-600': isWarning, 'text-red-600': isError }
       ]"
     />
-    <div v-else class="bg-white dark:bg-gray-800 shadow-md rounded-lg p-6 my-8">
+    <div v-else class="bg-white dark:bg-gray-800 shadow-md p-6 my-8">
       <h2 class="text-2xl font-bold mb-4 text-gray-900 dark:text-white">Domain Status</h2>
       <div class="flex flex-col">
         <div v-if="domain?.vhost" class="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -50,7 +50,7 @@
           </div>
 
           <!-- Full-width row that spans both columns -->
-          <!--<div class="col-span-full bg-gray-100 p-4 rounded-lg">
+          <!--<div class="col-span-full bg-gray-100 p-4">
             <div class="flex items-center space-x-2">
               <Icon icon="mdi:information" class="text-blue-500 w-5 h-5" />
               <span class="text-sm font-medium text-gray-700">

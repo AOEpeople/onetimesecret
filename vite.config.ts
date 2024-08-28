@@ -6,7 +6,7 @@ import path from 'path'
 // Remember, for security reasons, only variables prefixed with VITE_ are
 // available here to prevent accidental exposure of sensitive
 // environment variables to the client-side code.
-const apiBaseUrl = process.env.VITE_API_BASE_URL || 'https://dev.onetimesecret.com';
+const apiBaseUrl = process.env.VITE_API_BASE_URL || 'http://localhost:5173';
 
 export default defineConfig({
   root: "./src",
@@ -68,7 +68,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: 'src/main.ts', // Explicitly define the entry point here
-      }
+      },
     },
 
     // https://guybedford.com/es-module-preloading-integrity
@@ -92,6 +92,6 @@ export default defineConfig({
   },
 
   define: {
-    'process.env.API_BASE_URL': JSON.stringify(apiBaseUrl),
+    'process.env.API_BASE_URL': JSON.stringify(process.env.VITE_API_BASE_URL)
   },
 })

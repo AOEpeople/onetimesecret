@@ -33,7 +33,7 @@ const subscriptionDetails = computed(() => {
 
 <template>
   <div v-if="props.stripeSubscriptions.length > 0 && props.stripeCustomer"
-       class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md space-y-6 mb-6">
+       class="bg-white dark:bg-gray-800 p-6 shadow-md space-y-6 mb-6">
 
     <header class="flex items-center justify-between">
       <h2 class="text-2xl font-bold text-gray-900 dark:text-white flex items-center">
@@ -41,7 +41,7 @@ const subscriptionDetails = computed(() => {
         Subscription
       </h2>
       <a href="/account/billing_portal"
-         class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-brandcomp-500 hover:bg-brandcomp-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brandcomp-500 transition-colors duration-150">
+         class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium text-white bg-brandcomp-500 hover:bg-brandcomp-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brandcomp-500 transition-colors duration-150">
         Manage Subscription
       </a>
     </header>
@@ -72,7 +72,7 @@ const subscriptionDetails = computed(() => {
       <h3 class="text-lg font-semibold text-gray-700 dark:text-gray-300">Subscriptions</h3>
       <div v-for="subscription in subscriptionDetails"
            :key="subscription.id"
-           class="bg-gray-50 dark:bg-gray-700 p-4 rounded-lg">
+           class="bg-gray-50 dark:bg-gray-700 p-4">
         <div class="flex justify-between items-center mb-4">
           <span :class="[
             'px-2 py-1 text-xs font-semibold rounded-full',

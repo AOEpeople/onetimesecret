@@ -46,14 +46,14 @@
                   </li>
                 </ul>
               </div>
-              <a :href="tier.href" :aria-describedby="tier.id" class="mt-8 block rounded-md bg-indigo-600 px-3.5 py-2 text-center text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 dark:bg-indigo-500 dark:hover:bg-indigo-400">Get started today</a>
+              <a :href="tier.href" :aria-describedby="tier.id" class="mt-8 block bg-indigo-600 px-3.5 py-2 text-center text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 dark:bg-indigo-500 dark:hover:bg-indigo-400">Get started today</a>
             </div>
             <div class="flex flex-col items-start gap-x-8 gap-y-6 rounded-3xl p-8 ring-1 ring-gray-900/10 dark:ring-gray-700 sm:gap-y-10 sm:p-10 lg:col-span-2 lg:flex-row lg:items-center">
               <div class="lg:min-w-0 lg:flex-1">
                 <h3 class="text-lg font-semibold leading-8 tracking-tight text-indigo-600 dark:text-indigo-400">Discounted</h3>
                 <p class="mt-1 text-base leading-7 text-gray-600 dark:text-gray-300">Dolor dolores repudiandae doloribus. Rerum sunt aut eum. Odit omnis non voluptatem sunt eos nostrum.</p>
               </div>
-              <a href="#" class="rounded-md px-3.5 py-2 text-sm font-semibold leading-6 text-indigo-600 dark:text-indigo-400 ring-1 ring-inset ring-indigo-200 dark:ring-indigo-700 hover:ring-indigo-300 dark:hover:ring-indigo-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 dark:focus-visible:outline-indigo-500">Buy discounted license <span aria-hidden="true">&rarr;</span></a>
+              <a href="#" class="px-3.5 py-2 text-sm font-semibold leading-6 text-indigo-600 dark:text-indigo-400 ring-1 ring-inset ring-indigo-200 dark:ring-indigo-700 hover:ring-indigo-300 dark:hover:ring-indigo-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 dark:focus-visible:outline-indigo-500">Buy discounted license <span aria-hidden="true">&rarr;</span></a>
             </div>
           </div>
         </div>

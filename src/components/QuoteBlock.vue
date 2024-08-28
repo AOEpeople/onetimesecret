@@ -17,7 +17,7 @@ const currentTestimonial = computed(() => testimonials[currentIndex.value]);
 
 <template>
   <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-    <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden">
+    <div class="bg-white dark:bg-gray-800 shadow-md overflow-hidden">
       <div class="p-6 sm:p-8">
         <div class="hidden items-center mb-4 ">
           <svg class="w-6 h-6 text-brand-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24">

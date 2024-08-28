@@ -1,6 +1,6 @@
 <template>
   <div class="">
-    <div v-if="error" class="rounded-md bg-red-50 p-4 mb-4 ">
+    <div v-if="error" class="bg-red-50 p-4 mb-4 ">
       <div class="flex mb-8">
         <div class="flex-shrink-0">
           <Icon icon="mdi:fire-circle" class="h-5 w-5 text-red-400" aria-hidden="true" />
@@ -14,7 +14,7 @@
       </div>
     </div>
 
-    <div v-if="success" class="rounded-md bg-green-50 p-4 mb-4">
+    <div v-if="success" class="bg-green-50 p-4 mb-4">
       <div class="flex mb-8">
         <div class="flex-shrink-0">
           <Icon icon="mdi:check-circle" class="h-5 w-5 text-green-400" aria-hidden="true" />

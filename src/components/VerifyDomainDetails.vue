@@ -7,7 +7,7 @@
     <p class="text-lg mb-6 text-gray-600 dark:text-gray-300">Intro text for this card</p>-->
 
     <ol class="space-y-6 mb-8">
-      <li class="bg-gray-50 dark:bg-gray-700 p-4 rounded-lg">
+      <li class="bg-gray-50 dark:bg-gray-700 p-4">
         <h3 class="font-semibold text-lg mb-2 text-gray-800 dark:text-white">1. Create a TXT record</h3>
         <p class="mb-2 text-gray-600 dark:text-gray-300">Add this hostname to your DNS configuration:</p>
 
@@ -22,7 +22,7 @@
         </div>
 
       </li>
-      <li class="bg-gray-50 dark:bg-gray-700 p-4 rounded-lg">
+      <li class="bg-gray-50 dark:bg-gray-700 p-4">
         <h3 class="font-semibold text-lg mb-2 text-gray-800 dark:text-white">2. Create the A record</h3>
 
         <div class="space-y-2">
@@ -36,7 +36,7 @@
         </div>
 
       </li>
-      <li class="bg-gray-50 dark:bg-gray-700 p-4 rounded-lg">
+      <li class="bg-gray-50 dark:bg-gray-700 p-4">
         <h3 class="font-semibold text-lg mb-2 text-gray-800 dark:text-white">3. Wait for propagation</h3>
         <p class="text-gray-600 dark:text-gray-300">DNS changes can take as little as 60 seconds -- or up to 24 hours -- to take effect.</p>
       </li>
@@ -51,11 +51,11 @@
             text-white bg-brand-500
             disabled:bg-gray-400 disabled:cursor-not-allowed
             hover:bg-brand-600
-            rounded-lg transition duration-100 ease-in-out">
+            transition duration-100 ease-in-out">
       {{ isSubmitting ? 'Verifying...' : 'Verify Domain' }}
     </button>
 
-    <div class="mt-5 flex items-start bg-white dark:bg-gray-800 p-4 rounded-md">
+    <div class="mt-5 flex items-start bg-white dark:bg-gray-800 p-4">
       <Icon icon="mdi:information-outline"
             class="h-5 w-5 text-brandcomp-700 mr-2 mt-0.5 flex-shrink-0"
             aria-hidden="true" />

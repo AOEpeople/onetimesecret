@@ -101,17 +101,15 @@ const updateSelectedDomain = (domain: string) => {
                               @update:selectedDomain="updateSelectedDomain"
                               @update:content="secretContent = $event" />
 
-      <CustomDomainPreview :default_domain="selectedDomain" />
-
       <SecretFormPrivacyOptions :withRecipient="props.withRecipient"
                                 :withExpiry="true"
                                 :withPassphrase="true" />
 
       <button type="submit" tabindex="6"
-              class="text-xl w-full py-2 px-4 rounded mb-4
-              bg-orange-600 hover:bg-orange-700 text-white
+              class="text-xl w-full py-2 px-4 rounded-full mb-4
+              bg-brand-500 hover:bg-brand-600 text-white
               font-bold2 disabled:opacity-50 disabled:cursor-not-allowed
-              duration-300 ease-in-out transform hover:scale-105"
+              duration-300 ease-in-out transform"
               name="kind"
               value="share"
               :disabled="!isFormValid">
@@ -146,12 +144,12 @@ const updateSelectedDomain = (domain: string) => {
       <hr class="w-1/4 my-4 border-gray-200 mx-auto">
       <button type="submit" tabindex="7"
               v-if="props.withGenerate"
-              class="w-2/3 py-2 px-4 rounded mb-4
+              class="w-2/3 py-2 px-4 rounded-full mb-4
               text-base
-              bg-gray-100 hover:bg-gray-400 text-gray-800
+              bg-gray-100 hover:bg-gray-200 text-black
               dark:bg-gray-700 dark:hover:bg-gray-600 dark:text-gray-200
               mx-auto block
-              duration-300 ease-in-out transform hover:scale-105"
+              duration-300 ease-in-out transform"
               name="kind"
               value="generate">
         Or generate a random password

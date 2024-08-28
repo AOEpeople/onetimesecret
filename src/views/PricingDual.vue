@@ -78,7 +78,7 @@
           <button type="submit"
                   :aria-describedby="tier.id"
                   v-on="tier.featured ? { click: ($event: MouseEvent) => $event.preventDefault() } : {}"
-                  :class="[tier.featured ? 'block text-brand-400 dark:text-brand-400 ring-2 ring-inset bg-gray-800 dark:ring-slate-800 hover:ring-gray-300 dark:hover:ring-gray-800 focus-visible:outline-gray-600' : 'block bg-brand-500 text-white shadow-sm hover:bg-brand-600 focus-visible:outline-brand-500', 'mt-8 block rounded-md px-3.5 py-2.5 text-center text-lg font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 sm:mt-10']">
+                  :class="[tier.featured ? 'block text-brand-400 dark:text-brand-400 ring-2 ring-inset bg-gray-800 dark:ring-slate-800 hover:ring-gray-300 dark:hover:ring-gray-800 focus-visible:outline-gray-600' : 'block bg-brand-500 text-white shadow-sm hover:bg-brand-600 focus-visible:outline-brand-500', 'mt-8 block px-3.5 py-2.5 text-center text-lg font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 sm:mt-10']">
             {{ tier.cta }}
           </button>
         </form>
@@ -100,7 +100,7 @@
 
     <!-- Alternative option -->
     <div class="py-12 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <div class="rounded-lg bg-white dark:bg-gray-800 shadow-lg overflow-hidden">
+      <div class="bg-white dark:bg-gray-800 shadow-lg overflow-hidden">
         <div class="px-6 py-8 sm:p-10 lg:flex lg:items-center lg:justify-between">
           <div class="flex-1 space-y-6">
             <h3
@@ -169,12 +169,12 @@
           </div>
           <div class="mt-8 lg:mt-0 lg:ml-10 flex flex-col space-y-4">
             <a href="/signup/basic"
-               class="font-brand inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-brandcomp-500 hover:bg-brandcomp-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brandcomp-500 transition-colors duration-200">
+               class="font-brand inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium text-white bg-brandcomp-500 hover:bg-brandcomp-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brandcomp-500 transition-colors duration-200">
               Get Started for Free
             </a>
             <a href="https://github.com/onetimesecret/onetimesecret"
                ref="noopener noreferrer"
-               class="font-brand inline-flex items-center justify-center px-5 py-3 border border-gray-300 dark:border-gray-600 text-base font-medium rounded-md text-gray-700 dark:text-gray-200 bg-white dark:bg-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brandcomp-500 transition-colors duration-200">
+               class="font-brand inline-flex items-center justify-center px-5 py-3 border border-gray-300 dark:border-gray-600 text-base font-medium text-gray-700 dark:text-gray-200 bg-white dark:bg-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brandcomp-500 transition-colors duration-200">
               Learn About Self-Hosting
             </a>
           </div>

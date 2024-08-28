@@ -85,9 +85,9 @@ onUnmounted(() => {
   <div class="relative">
     <textarea ref="secretContentRef" tabindex="1"
               v-model="content"
-              class="w-full h-40 p-3 font-mono
-                border border-gray-300 rounded-md
-              focus:ring-brandcompdim-500 focus:border-brandcompdim-500
+              class="w-full shadow-inner-input h-40 p-3 font-mono
+                border border-gray-300
+              focus:ring-brand-500 focus:border-brand-500
               dark:bg-gray-700 dark:border-gray-600 dark:text-white"
               name="secret"
               autofocus
@@ -100,7 +100,7 @@ onUnmounted(() => {
            ref="dropdownRef">
         <div>
           <button type="button" tabindex="2"
-                  class="inline-flex justify-center items-center w-full rounded-md
+                  class="inline-flex justify-center items-center w-full
                   pl-4 py-2
                   border border-gray-300 dark:border-gray-600 shadow-sm
                   bg-white text-lg font-medium text-gray-700
@@ -118,9 +118,9 @@ onUnmounted(() => {
           </button>
         </div>
 
-        <!-- -class="origin-bottom-right absolute bottom-full right-0 mb-2 mt-2 w-64 rounded-md shadow-lg" -->
+        <!-- -class="origin-bottom-right absolute bottom-full right-0 mb-2 mt-2 w-64 shadow-lg" -->
         <div v-if="isOpen"
-             class="origin-top-right absolute right-0 mt-2 w-64 rounded-md shadow-lg
+             class="origin-top-right absolute right-0 mt-2 w-64 shadow-lg
               bg-white dark:bg-gray-800
               ring-1 ring-black ring-opacity-5 dark:ring-gray-700
               focus:outline-none z-50

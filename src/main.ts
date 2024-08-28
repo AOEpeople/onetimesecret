@@ -6,6 +6,7 @@ import Homepage from '@/views/Homepage.vue'
 import { Component, createApp, defineAsyncComponent, ref } from 'vue'
 
 import './style.css'
+//import '@/assets/fonts/roboto-v30-latin-regular.woff2'
 
 
 /**

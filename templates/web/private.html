@@ -1,6 +1,6 @@
 {{>partial/header}}
 
-<div class="container mx-auto p-4 max-w-2xl">
+<div class="container mx-auto mt-4 p-4 max-w-2xl">
 
   {{#authenticated}}
     {{>partial/dashboard_nav}}
@@ -8,12 +8,12 @@
 
   {{#show_secret_link}}
   <div class="mb-4">
-    <p class="text-base text-gray-600 dark:text-gray-400 mb-2">{{i18n.page.pretext}}</p>
+    <p class="text-base text-black mb-2">{{i18n.page.pretext}}</p>
 
     <div class="relative">
       <input
         id="secreturi"
-        class="w-full pr-10 px-3 py-2 bg-gray-100 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white"
+        class="w-full pr-10 px-3 py-2 bg-gray-100 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brand-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white"
         value="{{share_domain}}/{{share_path}}"
         readonly />
       <button
@@ -73,22 +73,22 @@
       }
     </script>
     {{#has_passphrase}}
-    <p class="mt-2 font-bold text-gray-800 dark:text-gray-200">{{i18n.page.requires_passphrase}}</p>
+    <p class="mt-2 font-bold text-black">{{i18n.page.requires_passphrase}}</p>
     {{/has_passphrase}}
   </div>
   {{/show_secret_link}} {{#show_metadata}} {{#recipients}}
-  <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-4">
+  <h3 class="text-lg font-semibold text-black mb-4">
     {{i18n.COMMON.sent_to}} {{to_s}}
   </h3>
   {{/recipients}} {{/show_metadata}} {{#show_secret}}
   <div class="mb-4">
     {{^can_decrypt}}
-    <p class="mb-2 italic text-gray-600 dark:text-gray-400">
+    <p class="mb-2 italic text-black">
       {{i18n.COMMON.secret}} ({{secret_shortkey}}):
     </p>
     <input
       id="displayedsecret"
-      class="w-full px-3 py-2 bg-gray-100 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white"
+      class="w-full px-3 py-2 bg-gray-100 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brand-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white"
       value="{{i18n.page.this_msg_is_encrypted}}"
       readonly />
     {{/can_decrypt}} {{#can_decrypt}} {{#truncated}}
@@ -105,12 +105,12 @@
       >{{/authenticated}}.
     </div>
     {{/truncated}}
-    <p class="mb-2 italic text-gray-600 dark:text-gray-400">
+    <p class="mb-2 italic text-black">
       {{i18n.COMMON.secret}} ({{secret_shortkey}}):
       <span class="text-sm text-gray-500 dark:text-gray-400">({{i18n.page.only_see_once}})</span>
     </p>
     <textarea
-      class="w-full px-3 py-2 bg-gray-100 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white"
+      class="w-full px-3 py-2 bg-gray-100 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brand-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white"
       readonly
       rows="{{display_lines}}">
 {{secret_value}}</textarea
@@ -119,17 +119,17 @@
   </div>
   {{/show_secret}} {{^show_secret}}
   <div class="mb-4">
-    <p class="mb-2 text-gray-600 dark:text-gray-400">
+    <p class="mb-2 text-black">
       {{i18n.COMMON.secret}} ({{secret_shortkey}}):
     </p>
     <input
-      class="w-full px-3 py-2 bg-gray-100 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white"
+      class="w-full px-3 py-2 bg-gray-100 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brand-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white"
       value="*******************"
       disabled />
   </div>
   {{/show_secret}}
 
-  <p class="text-gray-600 dark:text-gray-400 mb-4">
+  <p class="text-black mb-4">
     {{#is_received}}
     <em>{{i18n.COMMON.received}} {{received_date}}.</em>
     <span class="text-sm text-gray-500 dark:text-gray-400">({{received_date_utc}})</span>
@@ -147,9 +147,9 @@
   {{^is_destroyed}}
   <a
     href="{{burn_uri}}"
-    class="block w-full px-4 py-2 mb-4 text-center text-base
-      bg-yellow-400 rounded-md text-gray-800
-      hover:bg-yellow-300 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:ring-offset-2 dark:focus:ring-offset-gray-800">
+    class="block w-full px-4 py-2 mb-4 text-center text-base rounded-full font-medium
+      bg-brand-500 text-white
+      hover:bg-brand-600 focus:outline-none">
     <svg
       class="inline-block w-5 h-5 mr-2"
       fill="none"
@@ -181,14 +181,14 @@
 
   <a
     href="/"
-    class="block w-full px-4 py-2 mb-4 text-center rounded-md border-2 text-lg font-medium
-      bg-gray-200 text-gray-800 border-gray-300
-      dark:bg-gray-700 dark:text-gray-200 dark:border-gray-800
-      hover:bg-gray-100 hover:border-grey-200 dark:hover:bg-gray-600 dark:hover:border-gray-600"
+    class="block w-full px-4 py-2 mb-4 text-center font-medium rounded-full
+      bg-gray-100 text-black
+      dark:bg-gray-700 dark:text-gray-200
+      hover:bg-gray-200 dark:hover:bg-gray-600"
     >Create another secret</a>
 
   {{#show_secret}}
-  <div class="text-sm text-gray-600 dark:text-gray-400">
+  <div class="text-sm text-black">
     <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-2">F.A.Q.</h3>
     {{#has_passphrase}}
     <h4 class="font-semibold mt-4 mb-2">Why can't I see my passphrase?</h4>
@@ -228,8 +228,8 @@
     </p>
   </div>
   {{/show_secret}} {{^show_secret}}
-  <div class="text-sm text-gray-600 dark:text-gray-400">
-    <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-2">F.A.Q.</h3>
+  <div class="text-sm black">
+    <h3 class="text-lg font-semibold text-black mb-2">F.A.Q.</h3>
     {{^show_secret_link}}
     <h4 class="font-semibold mt-4 mb-2">What if I forgot to copy the shared link?</h4>
     <p class="mb-4">You need to create a new secret. We can't retrieve it for you.</p>

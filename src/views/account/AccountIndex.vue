@@ -4,7 +4,7 @@
     <p class="dark:text-gray-300 mb-4 text-lg">Account type: {{ accountType }}</p>
 
     <!-- API KEY -->
-    <div class="dark:bg-gray-800 p-6 mb-6 bg-white rounded-lg shadow">
+    <div class="dark:bg-gray-800 p-6 mb-6 bg-white shadow">
       <h2 class="dark:text-white flex items-center mb-4 text-xl font-semibold">
         <i class="fas fa-exclamation-triangle mr-2 text-red-500"></i>
         <span class="flex-1">API Key</span>
@@ -39,7 +39,7 @@
 
 
     <!-- PASSWORD CHANGE -->
-    <div class="dark:bg-gray-800 p-6 mb-6 bg-white rounded-lg shadow">
+    <div class="dark:bg-gray-800 p-6 mb-6 bg-white shadow">
       <h2 class="dark:text-white flex items-center mb-4 text-xl font-semibold">
         <i class="fas fa-lock mr-2"></i> Update Password
       </h2>
@@ -72,7 +72,7 @@
                      autocomplete="current-password"
                      aria-label="Current Password"
                      aria-labelledby="currentPasswordLabel"
-                     class="dark:border-gray-600 focus:border-brand-500 focus:ring focus:ring-brand-500 focus:ring-opacity-50 dark:bg-gray-700 dark:text-white block w-full pr-10 mt-1 border-gray-300 rounded-md shadow-sm">
+                     class="dark:border-gray-600 focus:border-brand-500 focus:ring focus:ring-brand-500 focus:ring-opacity-50 dark:bg-gray-700 dark:text-white block w-full pr-10 mt-1 border-gray-300 shadow-sm">
               <button type="button"
                       @click="togglePassword('current')"
                       class="absolute inset-y-0 right-0 flex items-center pr-3">
@@ -98,7 +98,7 @@
                      autocomplete="new-password"
                      aria-label="New Password"
                      aria-labelledby="newPasswordLabel"
-                     class="dark:border-gray-600 focus:border-brand-500 focus:ring focus:ring-brand-500 focus:ring-opacity-50 dark:bg-gray-700 dark:text-white block w-full pr-10 mt-1 border-gray-300 rounded-md shadow-sm">
+                     class="dark:border-gray-600 focus:border-brand-500 focus:ring focus:ring-brand-500 focus:ring-opacity-50 dark:bg-gray-700 dark:text-white block w-full pr-10 mt-1 border-gray-300 shadow-sm">
               <button type="button"
                       @click="togglePassword('new')"
                       class="hover:text-gray-600 dark:text-gray-300 dark:hover:text-gray-100 absolute inset-y-0 right-0 flex items-center pr-3 text-gray-400">
@@ -124,7 +124,7 @@
                      autocomplete="confirm-password"
                      aria-label="New Password"
                      aria-labelledby="confirmPasswordlabel"
-                     class="dark:border-gray-600 focus:border-brand-500 focus:ring focus:ring-brand-500 focus:ring-opacity-50 dark:bg-gray-700 dark:text-white block w-full pr-10 mt-1 border-gray-300 rounded-md shadow-sm">
+                     class="dark:border-gray-600 focus:border-brand-500 focus:ring focus:ring-brand-500 focus:ring-opacity-50 dark:bg-gray-700 dark:text-white block w-full pr-10 mt-1 border-gray-300 shadow-sm">
               <button type="button"
                       @click="togglePassword('confirm')"
                       class="absolute inset-y-0 right-0 flex items-center pr-3">
@@ -149,7 +149,7 @@
       </div>
     </div>
 
-    <div class="dark:bg-gray-800 p-6 bg-white rounded-lg shadow">
+    <div class="dark:bg-gray-800 p-6 bg-white shadow">
       <h2 class="dark:text-white flex items-center mb-4 text-xl font-semibold">
         <i class="fas fa-exclamation-triangle mr-2 text-red-500"></i>
         <span class="flex-1">Delete Account</span>
@@ -183,7 +183,7 @@
                name="shrimp"
                :value="shrimp" />
 
-        <div class="dark:bg-gray-800 p-6 bg-white rounded-lg shadow-lg">
+        <div class="dark:bg-gray-800 p-6 bg-white shadow-lg">
           <h3 class="dark:text-white mb-4 text-xl font-bold text-gray-900">Confirm Account Deletion</h3>
           <p class="dark:text-gray-300 mb-4 text-gray-700">Are you sure you want to permanently delete your account?
             This action cannot be undone.</p>
@@ -196,7 +196,7 @@
             <input v-model="deletePassword"
                    name="confirmation"
                    type="password"
-                   class="focus:outline-none focus:ring-2 focus:ring-brand-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white w-full px-3 py-2 border border-gray-300 rounded-md"
+                   class="focus:outline-none focus:ring-2 focus:ring-brand-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white w-full px-3 py-2 border border-gray-300"
                    autocomplete="confirmation"
                    placeholder="Confirm with your password" />
           </div>
@@ -209,12 +209,12 @@
           <div class="flex justify-end space-x-4">
             <button @click="closeDeleteModal"
                     type="button"
-                    class="hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-400 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600 px-4 py-2 text-gray-800 bg-gray-200 rounded-md">
+                    class="hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-400 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600 px-4 py-2 text-gray-800 bg-gray-200">
               Cancel
             </button>
             <button type="submit"
                     :disabled="!deletePassword || isDeleting"
-                    class="hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 dark:bg-red-700 dark:hover:bg-red-800 disabled:opacity-50 disabled:cursor-not-allowed flex items-center px-4 py-2 text-white bg-red-600 rounded-md">
+                    class="hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 dark:bg-red-700 dark:hover:bg-red-800 disabled:opacity-50 disabled:cursor-not-allowed flex items-center px-4 py-2 text-white bg-red-600">
               <svg v-if="isDeleting"
                    class="animate-spin w-5 h-5 mr-3 -ml-1 text-white"
                    xmlns="http://www.w3.org/2000/svg"

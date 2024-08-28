@@ -92,7 +92,7 @@ const handleMouseLeave = () => {
 
 <template>
   <div class="relative">
-    <textarea class="w-full h-32 p-3 border border-gray-300 rounded-md focus:ring-brandcompdim-500 focus:border-brandcompdim-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white"
+    <textarea class="w-full shadow-inner-input h-32 p-3 border border-gray-300 focus:ring-brand-500 focus:border-brand-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white"
               name="secret"
               autofocus
               autocomplete="off"
@@ -106,7 +106,7 @@ const handleMouseLeave = () => {
       <div class="relative inline-block text-left"
            ref="dropdownRef">
         <button type="button"
-                class="inline-flex justify-center items-center rounded-md border border-gray-300 dark:border-gray-600 shadow-sm px-3 py-1 bg-white text-sm font-medium text-gray-700 dark:bg-gray-800 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brandcomp-500 dark:focus:ring-offset-gray-800"
+                class="inline-flex justify-center items-center border border-gray-300 dark:border-gray-600 shadow-sm px-3 py-1 bg-white text-sm font-medium text-gray-700 dark:bg-gray-800 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brandcomp-500 dark:focus:ring-offset-gray-800"
                 @click="toggleCollapse">
           <span v-if="!isCollapsed"
                 class="text-sm text-brandcomp-600 dark:text-brandcomp-400 font-bold truncate max-w-[150px]">
@@ -124,7 +124,7 @@ const handleMouseLeave = () => {
                     leave-from-class="transform opacity-100 scale-100"
                     leave-to-class="transform opacity-0 scale-95">
           <div v-if="isOpen && !isCollapsed"
-               class="absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white dark:bg-gray-800 ring-1 ring-black ring-opacity-5 dark:ring-gray-700 focus:outline-none z-50 max-h-60 overflow-y-auto break-words">
+               class="absolute right-0 mt-2 w-56 shadow-lg bg-white dark:bg-gray-800 ring-1 ring-black ring-opacity-5 dark:ring-gray-700 focus:outline-none z-50 max-h-60 overflow-y-auto break-words">
             <div class="py-1"
                  role="menu"
                  aria-orientation="vertical"

@@ -1,6 +1,6 @@
 {{>partial/header}}
 
-<div class="container mx-auto p-4 max-w-2xl">
+<div class="container mx-auto mt-4 p-4 max-w-2xl">
   {{^verification}}
   {{#is_owner}}
 
@@ -38,25 +38,25 @@
       {{{add_shrimp}}}
       <input name="continue" type="hidden" value="true" />
       {{#has_passphrase}}
-      <input type="password" name="passphrase" id="passField" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white" placeholder="{{i18n.COMMON.enter_passphrase_here}}" />
+      <input type="password" name="passphrase" id="passField" class="w-full px-3 py-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brand-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white" placeholder="{{i18n.COMMON.enter_passphrase_here}}" />
       {{/has_passphrase}}
-      <button type="submit" class="w-full px-4 py-2 text-white bg-brand-500 rounded-md hover:bg-brand-600 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800">{{i18n.COMMON.click_to_continue}}</button>
+      <button type="submit" class="w-full px-4 py-2 text-white bg-brand-500 hover:bg-brand-600 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800 rounded-full font-medium">{{i18n.COMMON.click_to_continue}}</button>
     </form>
     {{^verification}}
-    <p class="text-sm text-gray-500 dark:text-gray-400">({{i18n.COMMON.careful_only_see_once}})</p>
+    <p class="text-sm text-center text-gray-500 dark:text-gray-400">({{i18n.COMMON.careful_only_see_once}})</p>
     {{/verification}}
     {{/show_secret}}
 
     {{#show_secret}}
     <div class="space-y-4">
       {{#verification}}
-      <p class="text-sm text-gray-600 dark:text-gray-400">{{i18n.page.your_secret_message}}</p>
+      <p class="text-sm text-black">{{i18n.page.your_secret_message}}</p>
       {{/verification}}
       {{^verification}}
-      <h2 class="text-gray-600 dark:text-gray-400">{{i18n.page.this_message_for_you}}</h2>
+      <h2 class="text-black">{{i18n.page.this_message_for_you}}</h2>
       {{/verification}}
 
-      <textarea class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white" readonly rows="{{display_lines}}">{{secret_value}}</textarea>
+      <textarea class="w-full px-3 py-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brand-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white" readonly rows="{{display_lines}}">{{secret_value}}</textarea>
 
       {{^verification}}
       <p class="text-sm text-gray-500 dark:text-gray-400">({{i18n.COMMON.careful_only_see_once}})</p>
@@ -73,15 +73,13 @@
     <div class="mt-4">
 
       {{^verification}}
-      <div class="bg-gray-100 border-l-4 border-gray-400 text-gray-700 my-16 p-4 mb-4 dark:bg-gray-800 dark:border-gray-600 dark:text-gray-300">
-        <button type="button" class="float-right hover:text-gray-900 dark:hover:text-gray-100" onclick="this.parentElement.remove()">&times;</button>
+      <div class="bg-gray-50 border-l-4 border-brand-500 text-gray-700 my-16 p-4 mb-4 dark:bg-gray-800 dark:border-gray-600 dark:text-gray-300">
         <p>Once you've finished viewing the secret, feel free to navigate away from this page or close the window. Your security is our priority.</p>
-
       </div>
       {{/verification}}
 
       {{#verification}}
-      <a href="/signin" class="block w-full px-4 py-2 text-center text-brand-500 bg-white border border-brand-500 rounded-md hover:bg-brand-50 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:ring-offset-2 dark:bg-gray-800 dark:text-brand-400 dark:border-brand-400 dark:hover:bg-gray-700">{{i18n.COMMON.login_to_your_account}}</a>
+      <a href="/signin" class="block w-full px-4 py-2 text-center text-brand-500 bg-white border border-brand-500 hover:bg-brand-50 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:ring-offset-2 dark:bg-gray-800 dark:text-brand-400 dark:border-brand-400 dark:hover:bg-gray-700">{{i18n.COMMON.login_to_your_account}}</a>
       {{/verification}}
 
     </div>

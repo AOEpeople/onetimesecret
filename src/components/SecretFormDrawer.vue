@@ -29,7 +29,7 @@
 -->
 <template>
   <div :class="[
-    'transition-all duration-200 ease-in-out rounded-lg',
+    'transition-all duration-200 ease-in-out',
     borderClass,
     isExpanded
       ? `mb-3 p-3 ${expandedBgClass}`

@@ -60,26 +60,29 @@ export default {
   theme: {
     fontFamily: {
       serif: defaultTheme.fontFamily.serif,
-      sans: defaultTheme.fontFamily.sans,
+      sans: ['Peclet', ...defaultTheme.fontFamily.sans],
       /* In CSS: font-family: theme('fontFamily.brand'); */
-      brand: ['Zilla Slab', ...defaultTheme.fontFamily.serif],
+      brand: ['Peclet', ...defaultTheme.fontFamily.serif],
       mono: defaultTheme.fontFamily.mono,
     },
     extend: {
+      boxShadow: {
+        'inner-input': 'inset 0 1px 1px rgba(0, 0, 0, 0.075)',
+      },
       colors: {
         // https://javisperez.github.io/tailwindcolorshades/?flamingo=dc4a22&guardsman-red=23b5dd
         brand: {
-          50: '#fcf8f2',
-          100: '#fcf4e8',
-          200: '#f7dec3',
-          300: '#f0c39e',
-          400: '#e68b5e',
-          500: '#dc4a22',
-          600: '#c43d1b',
-          700: '#a32d12',
-          800: '#85200c',
-          900: '#631507',
-          950: '#400b03',
+          '50': '#EDF4F7',
+          '100': '#DFECF2',
+          '200': '#B1CDDE',
+          '300': '#89AEC9',
+          '400': '#4673A3',
+          '500': '#173D7A',
+          '600': '#13346E',
+          '700': '#0D275C',
+          '800': '#081C4A',
+          '900': '#051438',
+          '950': '#020B24'
         },
         branddim: {
           '50': '#fcf8f2',
@@ -119,8 +122,20 @@ export default {
           '800': '#0a4c78',
           '900': '#053359',
           '950': '#021e3b'
-      }
-
+        },
+        gray: {
+          '50':  '#f8f8f8',
+          '100': '#F2F2F2',
+          '150': '#E6E6E6',
+          '200': '#DCDCDC',
+          '300': '#BDBDBD',
+          '400': '#989898',
+          '500': '#7C7C7C',
+          '600': '#656565',
+          '700': '#525252',
+          '800': '#464646',
+          '900': '#3D3D3D'
+        }
       },
     },
     // Don't mess with the scaling. rem == root em (ie. <html>). Everything is relative to that.

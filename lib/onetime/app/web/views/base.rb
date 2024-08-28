@@ -42,7 +42,7 @@ module Onetime
         self[:ruby_version] = "#{OT.sysinfo.vm}-#{OT.sysinfo.ruby.join}"
         self[:authenticated] = authenticated
         self[:display_promo] = false
-        self[:display_feedback] = true
+        self[:display_feedback] = false
         self[:feedback_text] = i18n[:COMMON][:feedback_text]
         self[:frontend_host] = frontend_host
         self[:frontend_development] = frontend_development
@@ -95,7 +95,7 @@ module Onetime
         end
         self[:jsvars] << jsvar(:available_plans, plans)
 
-        self[:display_links] = true
+        self[:display_links] = false
         self[:display_options] = true
         self[:display_recipients] = sess.authenticated?
         self[:display_masthead] = true

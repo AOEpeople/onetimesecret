@@ -6,7 +6,7 @@
       </div>
       <template v-if="activityItem.type === 'commented'">
         <img :src="activityItem.person.imageUrl" alt="" class="relative mt-3 h-6 w-6 flex-none rounded-full bg-gray-50" />
-        <div class="flex-auto rounded-md p-3 ring-1 ring-inset ring-gray-200">
+        <div class="flex-auto p-3 ring-1 ring-inset ring-gray-200">
           <div class="flex justify-between gap-x-4">
             <div class="py-0.5 text-xs leading-5 text-gray-500">
               <span class="font-medium text-gray-900">{{ activityItem.person.name }}</span> commented
@@ -33,7 +33,7 @@
   <div class="mt-6 flex gap-x-3">
     <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" class="h-6 w-6 flex-none rounded-full bg-gray-50" />
     <form action="#" class="relative flex-auto">
-      <div class="overflow-hidden rounded-lg pb-12 shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-indigo-600">
+      <div class="overflow-hidden pb-12 shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-indigo-600">
         <label for="comment" class="sr-only">Add your comment</label>
         <textarea rows="2" name="comment" id="comment" class="block w-full resize-none border-0 bg-transparent py-1.5 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6" placeholder="Add your comment..." />
       </div>
@@ -66,7 +66,7 @@
                 </ListboxButton>
 
                 <transition leave-active-class="transition ease-in duration-100" leave-from-class="opacity-100" leave-to-class="opacity-0">
-                  <ListboxOptions class="absolute bottom-10 z-10 -ml-6 w-60 rounded-lg bg-white py-3 text-base shadow ring-1 ring-black ring-opacity-5 focus:outline-none sm:ml-auto sm:w-64 sm:text-sm">
+                  <ListboxOptions class="absolute bottom-10 z-10 -ml-6 w-60 bg-white py-3 text-base shadow ring-1 ring-black ring-opacity-5 focus:outline-none sm:ml-auto sm:w-64 sm:text-sm">
                     <ListboxOption as="template" v-for="mood in moods" :key="mood.value" :value="mood" v-slot="{ active }">
                       <li :class="[active ? 'bg-gray-100' : 'bg-white', 'relative cursor-default select-none px-3 py-2']">
                         <div class="flex items-center">
@@ -83,7 +83,7 @@
             </Listbox>
           </div>
         </div>
-        <button type="submit" class="rounded-md bg-white px-2.5 py-1.5 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">Comment</button>
+        <button type="submit" class="bg-white px-2.5 py-1.5 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">Comment</button>
       </div>
     </form>
   </div>
