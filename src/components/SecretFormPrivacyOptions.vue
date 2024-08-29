@@ -22,6 +22,7 @@ const currentPassphrase = ref('');
 const selectedLifetime = ref('604800.0');
 
 const lifetimeOptions = [
+  { value: '2592000.0', label: '30 days' },
   { value: '1209600.0', label: '14 days' },
   { value: '604800.0', label: '7 days' },
   { value: '259200.0', label: '3 days' },
